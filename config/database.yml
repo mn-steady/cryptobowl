@@ -12,11 +12,13 @@ development:
   password: <%= ENV['cryptobowl_DATABASE_PASSWORD'] %>
 
 test:
-  <<: *default
-  database: cryptobowl_test     
   adapter: postgresql
-  username: cryptobowl
-  password: <%= ENV['cryptobowl_DATABASE_PASSWORD'] %>
+  encoding: unicode
+  database: cryptobowl_test
+  pool: 5
+  username: postgres
+  password: postgres
+  host: localhost
 
 production:
   <<: *default
