@@ -23,4 +23,3 @@ production:
   database: cryptobowl_production   
   username: <%= ENV['PG_USERNAME'] %>
   password: <%= ENV['PG_PASSWORD'] %>
-
